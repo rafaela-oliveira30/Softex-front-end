@@ -1,0 +1,364 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte do site */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* fonte mais fina */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+    background: url('imagens/paisagem.jpg') center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    border-bottom: 5px solid #035381;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: absolute; /* fica sobre a imagem de fundo */
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* centraliza horizontalmente */
+    background-color: rgba(7, 9, 99, 0.089); /* cor de fundo semi-transparente */
+    border-radius: 0 0 10px 10px;
+}
+
+.logo {
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #035381; /* caixa sobre a barra */
+    padding: 8px 15px;
+    box-shadow: 0 4px 8px rgba(7, 9, 99, 0.089);
+    position: relative;
+    z-index: 2;
+    top: 10px; /* sobressai sobre a barra */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.botao {
+    background: #035381;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* Hero centralizado */
+.hero {
+    text-align: center;
+    padding: 120px 20px; /* ajusta altura para navbar */
+}
+
+.hero h1 {
+    color: #020f53;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.hero p:first-of-type {
+    color: #020f53;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.hero p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.cta {
+    display: inline-block;
+    background: #f99a2a;
+    padding: 12px 25px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+/* Seção Introdução */
+.introducao {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.introducao h2 {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #003b5c; 
+}
+
+.introducao p {
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #f99a2a;
+}
+.introducao p .destaque {
+    font-weight: bold; /* apenas a parte dentro do span fica em negrito */
+}
+.negrito {
+    font-weight: bold; /* apenas para trechos específicos */
+    color: #003b5c;
+}
+
+.destaque {
+    color: #f99a2a;
+}
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagem1 {
+    width: 700px;
+    height: 300px;
+    background-image: url('imagens/primeira-viagem.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.linha2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto; /* centraliza corretamente */
+}
+
+.imagem2 {
+    width: 250px;
+    height: auto;
+}
+
+.texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+.texto h3 {
+    color: #003b5c;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.texto p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Destaques */
+.destaque-amarelo {
+    color: #fa930d;
+    text-decoration: underline;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+/* Seção Serviços */
+.servicos {
+    background: #003b5c;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.servicos h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.titulo-icone {
+    width: 40px;
+    height: 40px;
+}
+
+/* Lista de serviços em duas colunas */
+.servicos-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.servico {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: left;
+}
+
+.servico img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.servico h3 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 400;
+}
+
+.servico p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.5em;
+    color: #ddd;
+    font-weight: 300;
+}
+
+/* Seção Depoimentos */
+.depoimentos {
+    background: url("imagens/testemunha-bg.jpg") center/cover no-repeat;
+    padding: 60px 20px;
+    color: #333;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.2em;
+    color: #003b5c;
+    margin-bottom: 80px;
+    font-weight: 400;
+}
+
+.depoimentos-lista {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.depoimento-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 60px 20px 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    overflow: visible;
+}
+
+.depoimento-foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.foto-wrapper {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.depoimento-card h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #003b5c;
+    font-weight: 400;
+}
+
+.viagens {
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.depoimento-card p {
+    font-size: 0.95em;
+    line-height: 1.5em;
+    color: #444;
+    font-weight: 300;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #003b5c;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 300;
+}
+
+.footer .botao {
+    display: inline-block;
+    background-color: #c79707;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.footer .botao:hover {
+    background-color:#f99a2a;
+}
