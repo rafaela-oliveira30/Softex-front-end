@@ -1,0 +1,111 @@
+/* Geral */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar Superior */
+.navbar-light.bg-light {
+  background-color: #f8f9fa !important;
+}
+/* Nome da Loja */
+.loja-nome {
+  font-size: 2.5rem;   /* aumenta a fonte */
+  color: #4E342E !important;
+}
+.loja-nome .text-highlight {
+  color: #C19A6B !important; /* dourado suave */
+}
+
+/* Navbar Principal */
+.navbar-brand {
+  font-weight: bold;
+  color: #4E342E !important;
+}
+.navbar-brand span {
+  color: #C19A6B !important;
+}
+.nav-link {
+  color: #4E342E !important;
+  margin-left: 10px;
+}
+.nav-link:hover {
+  color: #C19A6B !important;
+}
+
+/* Banner */
+.banner img {
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 5px solid #C19A6B;
+}
+
+/* Categorias */
+#categorias {
+  background-color: #F5F5DC;
+}
+#categorias h2 {
+  color: #4E342E;
+}
+#categorias img {
+  border: 2px solid #ddd;
+  transition: transform 0.3s;
+  border-radius: 8px;
+}
+#categorias img:hover {
+  transform: scale(1.05);
+}
+#categorias p {
+  color: #4E342E;
+}
+
+/* Sobre Nós */
+#sobre h2 {
+  margin-bottom: 20px;
+  color: #4E342E;
+}
+#sobre .bg-primary {
+  background-color: #C19A6B !important;
+  color: #fff !important;
+}
+
+/* Produtos */
+#produtos {
+  background-color: #f8f9fa;
+}
+#produtos h2 {
+  color: #4E342E;
+}
+#produtos .border {
+  border: 1px solid #ddd !important;
+}
+#produtos .bg-primary {
+  background-color: #C19A6B !important;
+  color: #fff;
+}
+#produtos button {
+  background-color: #6B8E23;
+  border: none;
+}
+#produtos button:hover {
+  background-color: #556B2F;
+}
+
+/* Rodapé */
+footer {
+  background-color: #F5F5DC;
+  color: #4E342E;
+}
+footer h6 {
+  margin-bottom: 15px;
+  color: #4E342E;
+  font-weight: bold;
+}
+footer ul li {
+  margin-bottom: 5px;
+}
+footer p {
+  color: #4E342E;
+}

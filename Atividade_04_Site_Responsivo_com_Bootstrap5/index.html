@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Móveis</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar Superior -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom small">
+  <div class="container">
+
+    <!-- Marca -->
+    <a class="navbar-brand fw-bold" href="#">Soft Móveis</a>
+
+    <!-- Botão hamburguer (mobile centralizado) -->
+    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuSuperior" aria-controls="menuSuperior" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menus + Pesquisa -->
+    <div class="collapse navbar-collapse justify-content-between" id="menuSuperior">
+
+      <!-- Menus -->
+      <ul class="navbar-nav text-center">
+        <li class="nav-item me-3">
+          <a class="nav-link small" href="#">Início</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link small" href="#">Relatórios</a>
+        </li>
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle small" href="#" id="cadastroDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cadastro
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="cadastroDropdown">
+            <li><a class="dropdown-item small" href="#">Clientes</a></li>
+            <li><a class="dropdown-item small" href="#">Produtos</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Pesquisa -->
+      <form class="d-flex mt-3 mt-lg-0">
+        <input class="form-control form-control-sm me-2" type="search" placeholder="Pesquisar">
+        <button class="btn btn-outline-success btn-sm" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="text-center py-4">
+  <h1 class="fw-bold">Loja de <span class="text-highlight">Móveis</span></h1>
+</header>
+
+<!-- Navbar Principal -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+        <li class="nav-item"><a class="nav-link" href="#categorias">Loja</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="imagem/main.jpg" alt="Banner" class="img-fluid w-100">
+  </section>
+
+  <!-- Categorias -->
+  <section id="categorias" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Categorias dos Produtos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="imagem/category1.jpg" class="img-fluid rounded" alt="Escritório">
+          <p class="mt-2 fw-semibold">Escritório</p>
+        </div>
+        <div class="col-md-4">
+          <img src="imagem/category2.jpg" class="img-fluid rounded" alt="Casa">
+          <p class="mt-2 fw-semibold">Casa</p>
+        </div>
+        <div class="col-md-4">
+          <img src="imagem/category3.jpg" class="img-fluid rounded" alt="Cozinha">
+          <p class="mt-2 fw-semibold">Cozinha</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Sobre Nós -->
+<section id="sobre" class="py-5">
+  <div class="container">
+    <div class="row g-0 align-items-stretch">
+      <!-- Imagem -->
+      <div class="col-md-6">
+        <img src="imagem/aboutus.jpg" class="img-fluid w-100 h-100" alt="Sobre Nós">
+      </div>
+      <!-- Texto -->
+      <div class="col-md-6 bg-primary text-white d-flex flex-column justify-content-center p-5">
+        <h2 class="fw-bold mb-3">Sobre Nós</h2>
+        <p>
+         Na Soft Movéis, acreditamos que cada móvel transforma ambientes e gera conforto para sua casa.
+Oferecemos produtos de qualidade, combinando design moderno e funcionalidade.
+        </p>
+        <p>
+          Valorizamos a satisfação dos nossos clientes e buscamos superar expectativas a cada atendimento.
+Trabalhamos com dedicação, garantindo móveis duráveis e estilosos para todos os gostos.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Nossos Produtos</h2>
+      <div class="row g-4">
+        <!-- Produto 1 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden shadow-sm">
+            <div class="col-md-6">
+              <img src="imagem/product1.jpg" class="img-fluid h-100" alt="Produto 1">
+            </div>
+            <div class="col-md-6 bg-primary text-white p-3 d-flex flex-column justify-content-center">
+              <h5>Conjunto Aparador Compacto</h5>
+              <p>conjunto inclui 1 cadeira moderna e 1 mesa aparador compacta.</p>
+              <p class="fw-bold">R$ 1.500,00</p>
+              <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <!-- Produto 2 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden shadow-sm">
+            <div class="col-md-6">
+              <img src="imagem/product2.jpg" class="img-fluid h-100" alt="Produto 2">
+            </div>
+            <div class="col-md-6 bg-primary text-white p-3 d-flex flex-column justify-content-center">
+              <h5>Kit Quarto & Escritório</h5>
+              <p>Este conjunto é composto por Sofá de 2 lugares,Guarda-roupa funcional e Mesa escrivaninha prática</p>
+              <p class="fw-bold">R$ 3.000,00</p>
+              <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <!-- Produto 3 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden shadow-sm">
+            <div class="col-md-6">
+              <img src="imagem/product3.jpg" class="img-fluid h-100" alt="Produto 3">
+            </div>
+            <div class="col-md-6 bg-primary text-white p-3 d-flex flex-column justify-content-center">
+              <h5>Sofá Decorativo</h5>
+              <p>Sofá de 3 lugares espaçoso. Estofado cinza neutro que combina com qualquer decoração.</p>
+              <p class="fw-bold">R$ 2.000,00</p>
+              <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <!-- Produto 4 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden shadow-sm">
+            <div class="col-md-6">
+              <img src="imagem/product4.jpg" class="img-fluid h-100" alt="Produto 4">
+            </div>
+            <div class="col-md-6 bg-primary text-white p-3 d-flex flex-column justify-content-center">
+              <h5>Conjunto Sala de Estar Harmony </h5>
+              <p>Conjunto composto por 2 sofás confortáveis,1 poltrona estilosa e 1 mesa central prática.</p>
+              <p class="fw-bold">R$ 9.000,00</p>
+              <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <!-- Produto 5 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden shadow-sm">
+            <div class="col-md-6">
+              <img src="imagem/product5.jpg" class="img-fluid h-100" alt="Produto 5">
+            </div>
+            <div class="col-md-6 bg-primary text-white p-3 d-flex flex-column justify-content-center">
+              <h5>Mesa de Canto Elegance</h5>
+              <p>Ideal para apoiar objetos decorativos.Uma peça funcional que une elegância e utilidade.</p>
+              <p class="fw-bold">R$ 350,00</p>
+              <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+        <!-- Produto 6 -->
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden shadow-sm">
+            <div class="col-md-6">
+              <img src="imagem/product6.jpg" class="img-fluid h-100" alt="Produto 6">
+            </div>
+            <div class="col-md-6 bg-primary text-white p-3 d-flex flex-column justify-content-center">
+              <h5>Conjunto Escritório Pro</h5>
+              <p>Escritório composto por 1 Mesa ampla e funcional,1 Cadeira ergonômica e Armário compacto.</p>
+              <p class="fw-bold">R$ 2.700,00</p>
+              <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="row text-center ">
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Categorias</h6>
+          <ul class="list-unstyled">
+            <li>Cozinha</li>
+            <li>Escritório</li>
+            <li>Jardim</li>
+            <li>Garagem</li>
+            <li>Quarto</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Sobre Nós</h6>
+          <ul class="list-unstyled">
+            <li>Nossa História</li>
+            <li>Missão, Visão e Valores</li>
+            <li>Carreiras</li>
+            <li>Política de Privacidade</li>
+            <li>Termos de Serviço</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold">Suporte</h6>
+          <ul class="list-unstyled">
+            <li>Perguntas Frequentes</li>
+            <li>Ajuda Online</li>
+            <li>Confiança & Segurança</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center small mt-4 mb-0">Todos os Direitos Reservados. Loja de Móveis 2025 ©</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
