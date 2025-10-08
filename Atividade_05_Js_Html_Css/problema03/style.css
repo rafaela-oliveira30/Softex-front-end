@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #f7f7f7;
+  max-width: 500px;
+}
+
+#resultado {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
